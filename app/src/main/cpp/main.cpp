@@ -1,10 +1,6 @@
 #include "raylib.h"
 #include <sys/stat.h>
 
-extern "C" int stat64i32(const char* path, struct _stat64i32* buffer) {
-    return _stat64i32(path, buffer);
-}
-
 struct Jugador {
     Vector2 posicion;
     float velocidad;
